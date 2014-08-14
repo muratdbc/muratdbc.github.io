@@ -66,6 +66,10 @@
  -moz-border-radius: 100px;
 }
 
+.link-to-RWD{
+ float: right;
+}
+
 footer{
   text-align: center;
   font-size: 10px;
