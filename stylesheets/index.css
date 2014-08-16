@@ -81,3 +81,50 @@
    margin-top: 4%;
    margin-left: 20%;
 }
+
+@media screen and (max-width:1200px){
+  #sidebar img{
+    width:25%; /* you can use % */
+    height: auto;
+    float: left;
+    background-size: cover;
+   display: block;
+   border-radius: 10%;
+   margin-top: 4%;
+   margin-left: 20%;
+  }
+}
+@media screen and (max-width:1020px){
+  #sidebar img{
+    display: none;
+    /*width:25%;
+    height: auto;
+    float: left;
+    background-size: cover;
+   display: block;
+   border-radius: 10%;
+   margin-top: 4%;
+   margin-left: 20%;*/
+  }
+  @media screen and (max-width:760px){
+    #container{
+  background-color:#BCD5CB;
+  width:60%;
+  margin: auto;
+  font-family: "Ubuntu",sans-serif;
+  padding-bottom: 50%;
+ padding-left: 5%;
+
+}
+@media screen and (max-width:600px){
+    #container{
+  background-color:#BCD5CB;
+  width:60%;
+  margin: auto;
+  font-family: "Ubuntu",sans-serif;
+  padding-bottom: 60%;
+ padding-left: 5%;
+
+}
+
+}
