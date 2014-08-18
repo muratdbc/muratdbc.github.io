@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+#container  {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+  font-size: 1.5em;
+  font-family: sans-serif, serif;
+}
+.header {
+  font-size: 1em;
+}
+h1  {
+  text-align: center;
+}
+#blogBox  {
+  width: 40%;
+  float: left;
+  font-family: 'Oswald', serif;
+  margin: 10px;
+}
+#LBJ  {
+  margin-top: 40px;
+  float: left;
+}
