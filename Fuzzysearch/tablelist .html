@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="tablelist.css">
+  <script src="http://listjs.com/no-cdn/list.js"></script>
+  <script>var options = {
+  valueNames: [ 'name', 'born' ]};
+  var userList = new List('users', options);
+  </script>
+</head>
+<body>
+  <div id="users">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+  <table>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+      <tr>
+        <td class="name">Jonny Stromberg</td>
+        <td class="born">1986</td>
+      </tr>
+      <tr>
+        <td class="name">Jonas Arnklint</td>
+        <td class="born">1985</td>
+      </tr>
+      <tr>
+        <td class="name">Martina Elm</td>
+        <td class="born">1986</td>
+      </tr>
+      <tr>
+        <td class="name">Gustaf Lindqvist</td>
+        <td class="born">1983</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
+

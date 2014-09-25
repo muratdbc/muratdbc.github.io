@@ -1,0 +1,38 @@
+
+#container{
+  width:960px;
+  margin: auto;
+  background-color: green;
+  height: 600px;
+}
+.small-box{
+  width:300px;
+  background-color: yellow;
+  margin:10px;
+}
+.align-left{
+  float:left;
+}
+#cs_filter{
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
+td{
+  background-color: red;
+}
+th{
+  background-color: blue;
+  color:white;
+}
+.fuzzy-search{
+  width:100px;
+  height:20px;
+
+}
+#combo-box{
+  padding: 5px;
+  font-size: 1.2em;
+  width: 200px;
+  margin: auto;
+}
