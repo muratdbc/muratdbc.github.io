@@ -1,13 +1,25 @@
+*{
+  color: #31312c;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 16px;
+  background-color: #abab9a;
+  padding:5px 10px;
+}
 
 #container{
   width:960px;
+  padding: 50px 20px;
   margin: auto;
-  background-color: green;
-  height: 600px;
+  background-color: #dcdcc6;
+  height: 2000px;
 }
 .small-box{
   width:300px;
-  background-color: yellow;
+  background-color: #dcdcc6;
   margin:10px;
 }
 .align-left{
@@ -18,21 +30,44 @@
   font-size: 1.2em;
   width: 120px;
 }
+
 td{
-  background-color: red;
+  background-color: #c4c4b0;
+  padding: 10px;
+  font-size: 12px;
 }
 th{
-  background-color: blue;
+  background-color: #abab9a;
   color:white;
+  padding: 10px;
+  width: 80px;
 }
-.fuzzy-search{
-  width:100px;
-  height:20px;
+
+.searchInput{
+  border-radius: 0;
 
 }
+input {
+  background-color: #fdfdf8;
+}
+
+label {
+  padding: 10px;
+}
+
+
+
 #combo-box{
   padding: 5px;
   font-size: 1.2em;
   width: 200px;
   margin: auto;
+}
+
+
+
+
+/*hides the search that is not relevant DO NOT DELETE*/
+.dontShow{
+  display:none;
 }

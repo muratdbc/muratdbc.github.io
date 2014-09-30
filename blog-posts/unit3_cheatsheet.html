@@ -1,88 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Cheat Sheet</title>
-  <link rel="stylesheet" href="../stylesheets/cheatsheet.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="http://listjs.com/no-cdn/list.js"></script>
-  <script src="http://listjs.com/no-cdn/list.fuzzysearch.js"></script>
-</head>
-<body>
-<section id="container">
-  <section id="combo-box">
-    <label for="name">Search </label>
-  <input type="text" class="fuzzy-search" />
- </section>
-  <section class="small-box align-left">
-    <table>
-      <tbody class="list">
-      <tr>
-        <th><p class="name">mark</p></th>
-        <td>Represents text highlighted for reference purposes, that is for its relevance in another context..</td>
-      </tr>
-      <tr>
-        <th><p class="name">wbr</p></th>
-        <td>Represents a line break opportunity , that is a suggested point for wrapping text in order
-         to improve readability of text split on several lines.</td>
-      </tr>
-      <tr>
-        <th>rt</th>
-        <td>Represents the text of a ruby annotation .</td>
-      </tr>
-      <tr>
-        <th>rp</th>
-        <td>Represents text that must be isolated from its surrounding for bidirectional text
-        formatting. It allows embedding a span of text with a different, or unknown, directionality.</td>
-      </tr>
-      <tr>
-        <th>bdi</th>
-        <td>Represents text that must be isolated from its surrounding for bidirectional
-         text formatting. It allows embedding a span of text with a different, or unknown, directionality.</td>
-      </tr>
-      </tbody>
-    </table>
-  </section>
-  <section class="small-box align-left">
-    <table>
-      <tr>
-        <th>template</th>
-        <td>Container for client-side content instantiated during runtime using JavaScript.</td>
-      </tr>
-      <tr>
-        <th>section</th>
-        <td>Defines a section in a document.</td>
-      </tr>
-      <tr>
-        <th>nav</th>
-        <td>Defines a section that contains only navigation links.</td>
-      </tr>
-      <tr>
-        <th>article</th>
-        <td>Defines self-contained content that could exist independently of the rest of the content.</td>
-      </tr>
-      <tr>
-        <th>aside</th>
-        <td>Defines some content loosely related to the page content. If it is removed,
-         the remaining content still makes sense.</td>
-      </tr>
-    </table>
-  </section>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Cheat Sheet</title>
+    <!--link to css sheet-->
+    <link rel="stylesheet" href="../stylesheets/cheatsheet.css">
 
-  <section class="small-box align-left">
-    <table>
-      <tr>
-        <th>figure</th>
-        <td>Represents a figure illustrated as part of the document.</td>
-      </tr>
-      <tr>
-        <th>figcaption</th>
-        <td>Represents the legend of a figure.</td>
-      </tr>
-    </table>
-  </section>
+    <!-- Selected google font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  </head>
 
-</section>
+  <body>
+    <div id="container">
+      <h1>HTML Cheat Sheet</h1>
+      <!-- search button -->
+      <div class="search">
+        <label>Search here:
+          <input type="search" id="searchInput" />
+        </label>
 
-</body>
+      </div>
+
+      <!-- content -->
+      <div id="toSearchFor">
+
+        <!-- LEFT COLUMN -->
+        <section class="small-box align-left">
+          <table>
+            <h2>Basics</h2>
+            <tbody class="list">
+              <tr>
+                <th>&#60;html&#62;</th>
+                <td>
+                  Goes around the whole document.
+                </td>
+              </tr>
+              <tr>
+                <th>&#60;body&#62;</th>
+                <td>
+                  contains all visible elements</td>
+              </tr>
+              <tr>
+                <th>&#60;h1-h6&#62;</th>
+                <td>
+                  Headlines in order, the main headline is a h1 and then going down to h6 or however many necessary
+                </td>
+              </tr>
+              <tr>
+                <th>&#60;p&#62;</th>
+                <td>
+                  for all text that is not a headline
+                </td>
+              </tr>
+              <tr>
+                <th>&#60;br&#62;</th>
+                <td>
+                  creates a line break. Note: It is better practice to use padding or margins instead.
+                </td>
+              </tr>
+              <tr>
+                <th>&#60;div&#62;</th>
+                <td>
+                  Specifies a logical division within a document. Use it to separate or identify chunks of content that are not otherwise distinguished naturally using other tags. One of the most common HTML tags.
+                </td>
+              </tr>
+              <tr>
+                <th>&#60;span&#62;</th>
+                <td>
+                  An inline span within text that goes with the flow of content (whereas a &#60;div&#62; tag is block-level and breaks the flow)
+                </td>
+              </tr>
+              <tr>
+              <th>&#60;a&#62;</th>
+              <td>
+                Anchor (most commonly a link)
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;link&#62;</th>
+              <td>
+                Defines a relationship to another documente, this can be page which is part of the site, an anchor or an external document or site.
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;img&#62;</th>
+              <td>
+                Show an image
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+         <!-- MIDDLE COLUMN -->
+        <section class="small-box align-left">
+          <table>
+            <h2>Table</h2>
+            <tr>
+              <th>&#60;table&#62;</th>
+              <td>
+                Use for repeated data that has a naturally tabular form. Never use for layout purposes.
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;caption&#62;</th>
+              <td>
+                Caption for a table: describes the table’s contents
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;th&#62;</th>
+              <td>
+                Table column or row header cell. May appear in a &#60;thead&#62; (to denote a column header cell), &#60;tbody&#62; (to denote a row header), and in &#60;tfoot&#62; (to denote a column foot cell, e.g. a total)
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;tr&#62;</th>
+              <td>
+                Table row
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;td&#62;</th>
+              <td>
+                defines a standard cell in an HTML table.
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;thead&#62;</th>
+              <td>
+                headline in a table
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;tbody&#62;</th>
+              <td>
+                Indicates the main body of a data table
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;tfoot&#62;</th>
+              <td>
+                Indicates the footer of a data table
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;col&#62;</th>
+              <td>
+                Identifies a particular column in a table
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <section class="small-box align-left">
+          <table>
+            <h2>Frames</h2>
+            <tr>
+              <th>&#60;iframes&#62;</th>
+              <td>
+                An inline frame is used to embed another document within the current HTML document.
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;frameset&#62;</th>
+              <td>
+                The &#60;frameset&#62; tag defines a frameset.
+              The &#60;frameset&#62; element holds one or more &#60;frame&#62; elements. Each &#60;frame&#62; element can hold a separate document. (Not supported in html 5!)
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;noframes&#62;</th>
+              <td>
+                The &#60;noframes&#62; tag is a fallback tag for browsers that do not support frames. It can contain all the HTML elements that you can find inside the &#60;body&#62; element of a normal HTML page.
+              </td>
+            </tr>
+          </table>
+          <!-- second part -->
+          <table>
+            <h2>Lists</h2>
+            <tr>
+              <th>&#60;ul&#62;</th>
+              <td>
+                Unordered list
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;ol&#62;</th>
+              <td>
+                ordered list
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;li&#62;</th>
+              <td>
+              list item (in both li and ol lists)
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;dl&#62;</th>
+              <td>
+                Contains one or more definition-term / definition-description pairs.
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;dt&#62;</th>
+              <td>
+                Represents the legend of a figure
+              </td>
+            </tr>
+            <tr>
+              <th>&#60;menu&#62;</th>
+              <td>
+                Menu item list. Deprecated. Do not use. Use other standard list types instead.
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+
+      <!--   links to the js file -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="../js/fuzzy.js"></script>
+  </body>
 </html>
